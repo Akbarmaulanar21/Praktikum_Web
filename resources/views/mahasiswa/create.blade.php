@@ -1,0 +1,46 @@
+@extends('layout.template')
+<!-- START FORM -->
+@section('content')
+<form action='{{ url('mahasiswa') }}' method='post'>
+    @csrf
+    <h2>Halaman Tambah Mahasiswa</h2>
+    <div class="my-3 p-3 bg-body rounded shadow-sm">
+        <a href="{{ url('mahasiswa') }}" class="btn btn-secondary"><< Kembali</a>
+        <div class="mb-3 row">
+            <label for="nim" class="col-sm-2 col-form-label">NIM</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" name='nim' value="{{ Session::get('nim') }}" id="nim">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name='nama' value="{{ Session::get('nama') }}" id="nama">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="jenis_kelamin" class="col-sm-2 col-form-label">Jenis_Kelamin</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name='jenis_kelamin' value="{{ Session::get('jenis_kelamin') }}" id="jenis_kelamin">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="jurusan" class="col-sm-2 col-form-label">Jurusan</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name='jurusan' value="{{ Session::get('jurusan') }}" id="jurusan">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name='alamat' value="{{ Session::get('alamat') }}" id="alamat">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="alamat" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10"><button type="submit" class="btn btn-primary" name="submit">SIMPAN</button></div>
+        </div>
+    </div>
+   </form>
+    <!-- AKHIR FORM -->
+@endsection
