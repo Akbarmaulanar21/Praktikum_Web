@@ -8259,7 +8259,7 @@ a[data-toggle="collapse"] {
   position: relative; }
 
 a.img.logo.rounded-circle.mb-5{
-  background-color: #005cbf;
+  background-image: url('/images/logo.jpg');
 }
 
 .dropdown-toggle::after {

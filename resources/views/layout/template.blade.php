@@ -14,7 +14,7 @@
     <div class="wrapper d-flex align-items-stretch">
       <nav id="sidebar">
         <div class="p-4 pt-5">
-          <a href="" class="img logo rounded-circle mb-5"></a>
+          <a href="https://github.com/Akbarmaulanar21" class="img logo rounded-circle mb-5"></a>
           <ul class="list-unstyled components mb-5">
             <li>
               <h4 style="color: white; text-align:center;">PRAKTIKUM PEMROGRAMAN WEB</h4>
