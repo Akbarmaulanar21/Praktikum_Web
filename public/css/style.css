@@ -302,6 +302,7 @@ template {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2; }
@@ -310,6 +311,7 @@ h1, .h1 {
   font-size: 2.5rem; }
 
 h2, .h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 2rem; }
 
 h3, .h3 {
@@ -6734,7 +6736,7 @@ button.bg-dark:focus {
   padding-left: 1rem !important; }
 
 .p-4 {
-  padding: 1.5rem !important; }
+  padding: 2.5rem !important; }
 
 .pt-4,
 .py-4 {
@@ -8252,9 +8254,13 @@ h1, h2, h3, h4, h5,
       margin-left: -300px; }
       #sidebar.active {
         margin-left: 0; } }
-
+        
 a[data-toggle="collapse"] {
   position: relative; }
+
+a.img.logo.rounded-circle.mb-5{
+  background-image: url(images/logo.jpg);
+}
 
 .dropdown-toggle::after {
   display: block;

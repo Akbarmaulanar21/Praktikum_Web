@@ -1,9 +1,9 @@
 @extends('layout.template')
-        
+@section('title', 'Data Mahasiswa')
 <!-- START DATA -->
 @section('content')
 <div class="my-3 p-3 bg-body rounded shadow-sm">
-    <h1>Halaman Data Mahasiswa</h1>
+    <h2>Halaman Data Mahasiswa</h2>
     <!-- FORM PENCARIAN -->
     <div class="pb-3">
       <form class="d-flex" action="{{ url('mahasiswa') }}" method="get">
@@ -11,12 +11,6 @@
           <button class="btn btn-secondary" type="submit">Cari</button>
       </form>
     </div>
-    
-    <!-- TOMBOL TAMBAH DATA -->
-    <div class="pb-3">
-      <a href='{{ url('mahasiswa/create') }}' class="btn btn-primary">+ Tambah Data</a>
-    </div>
-
     <table class="table table-striped">
         <thead>
             <tr>
