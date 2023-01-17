@@ -21,19 +21,19 @@ class mahasiswaController extends Controller
         if (strlen($katakunci)) {
             $data = mahasiswa::where('nim', 'like', "%$katakunci%")
                 ->orWhere('nama', 'like', "%$katakunci%")
-                ->orWhere('jenis_kelamin', 'like', "%$katakunci%")
                 ->orWhere('jurusan', 'like', "%$katakunci%")
+                ->orWhere('jenis_kelamin', 'like', "%$katakunci%")
                 ->orWhere('alamat', 'like', "%$katakunci%")
                 ->paginate($jumlahbaris);
         } else {
             $data = mahasiswa::orderBy('nim', 'desc')->paginate($jumlahbaris);
         }
-        $data = mahasiswa::orderBy('nim', 'desc')->paginate(2);
         return view('mahasiswa.index')->with('data', $data);
     }
 
     /**
      * Show the form for creating a new resource.
+     *
      *
      * @return \Illuminate\Http\Response
      */
